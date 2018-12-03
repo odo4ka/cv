@@ -1,13 +1,26 @@
 body {
+  font-family: sylfaen; 
+  margin-top:1%;
+  margin-bottom:1%;
+  margin-left:5%;
+  margin-right: 5%;
+
+  font-size: 14pt;
 }
 
 header {
-  background-color: lightgray;
+  background-color: #FFE4B5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
   text-align: center;
-  color: gray;
+  color: #778899;
+  font-size: 16pt;
+}
+
+ul{
+  list-style-type: square;
+  max-width: 95%;
 }
 
 header h2 {
@@ -22,7 +35,7 @@ aside {
 section {
   display: flex;
   margin-top: 0.1cm;
-  background-color: lightgray;
+  background-color: #FFE4B5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
@@ -30,10 +43,12 @@ section {
 
 article {
   display: flex;
-  justify-content: flex-start;
+  justify-content: stretch;
+  flex-wrap: column wrap;
   flex-direction: column;
+  margin-left: 0.5cm;
   width: 100%;
-  color: gray;
+  color: #778899;
 }
 
 .main {
@@ -48,7 +63,7 @@ article {
 }
 
 .dateInsideArticle {
-  width: 150px;
+  width: 170px;
   align-self: center;
   font-style: italic;
 }
@@ -64,15 +79,18 @@ article {
 .articlesInColumnItem {
   padding-right: 1cm;
 }
+
 article h2 {
   font-size: 14pt;
   font-weight: bold;
-  color: gray;
+  color: #778899;
 }
 
 article h1 {
   font-size: 16pt;
-  color: gray;
+  font-weight: bold;
+  color: #778899;
+  text-decoration: underline;
 }
 
 article .publi {
@@ -82,11 +100,33 @@ article .publi {
 footer {
   display: block;
   margin-top: 0.1cm;
-  background-color: lightgray;
+  background-color: #FFE4B5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
-  font-size: 12pt;
-  color: gray;
+  color: #778899;
   text-align: center;
+}
+
+.ville{
+  font-style: italic;
+}
+
+footer h2{
+  text-decoration : underline;
+}
+
+footer a {
+  text-decoration: none; 
+  color: #778899;
+}
+
+article img{
+  height: 125pt;
+}
+
+.boxImage{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
