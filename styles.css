@@ -1,15 +1,15 @@
 body {
-  font-family: sylfaen; 
-  margin-top:1%;
-  margin-bottom:1%;
-  margin-left:5%;
+  font-family: sylfaen;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 5%;
   margin-right: 5%;
 
   font-size: 14pt;
 }
 
 header {
-  background-color: #FFE4B5;
+  background-color: #ffe4b5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
@@ -18,7 +18,7 @@ header {
   font-size: 16pt;
 }
 
-ul{
+ul {
   list-style-type: square;
   max-width: 95%;
 }
@@ -35,7 +35,7 @@ aside {
 section {
   display: flex;
   margin-top: 0.1cm;
-  background-color: #FFE4B5;
+  background-color: #ffe4b5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
@@ -47,7 +47,7 @@ article {
   flex-wrap: column wrap;
   flex-direction: column;
   margin-left: 0.5cm;
-  width: 100%;
+  /*  width: 80%;*/
   color: #778899;
 }
 
@@ -100,7 +100,7 @@ article .publi {
 footer {
   display: block;
   margin-top: 0.1cm;
-  background-color: #FFE4B5;
+  background-color: #ffe4b5;
   border-style: solid groove;
   border-radius: 10px;
   border-color: gray;
@@ -108,25 +108,33 @@ footer {
   text-align: center;
 }
 
-.ville{
+.ville {
   font-style: italic;
 }
 
-footer h2{
-  text-decoration : underline;
+footer h2 {
+  text-decoration: underline;
 }
 
 footer a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #778899;
 }
 
-article img{
-  height: 125pt;
+article img {
+  height: 100pt;
+  width: 200pt;
 }
 
-.boxImage{
+.boxImage {
+  border: red solid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.boxImage > div {
+  border: blue solid;
+}
+.boxImage img {
+  border: green solid;
 }
