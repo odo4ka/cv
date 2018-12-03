@@ -1,0 +1,92 @@
+body {
+}
+
+header {
+  background-color: lightgray;
+  border-style: solid groove;
+  border-radius: 10px;
+  border-color: gray;
+  text-align: center;
+  color: gray;
+}
+
+header h2 {
+  font-style: italic;
+  font-size: 14pt;
+}
+aside {
+  display: flex;
+  float: left;
+}
+
+section {
+  display: flex;
+  margin-top: 0.1cm;
+  background-color: lightgray;
+  border-style: solid groove;
+  border-radius: 10px;
+  border-color: gray;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  color: gray;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+.insideArticle {
+  display: flex;
+  flex-direction: row;
+}
+
+.dateInsideArticle {
+  width: 150px;
+  align-self: center;
+  font-style: italic;
+}
+
+.articlesInColumn {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.articlesInColumnItem {
+  padding-right: 1cm;
+}
+article h2 {
+  font-size: 14pt;
+  font-weight: bold;
+  color: gray;
+}
+
+article h1 {
+  font-size: 16pt;
+  color: gray;
+}
+
+article .publi {
+  font-style: italic;
+}
+
+footer {
+  display: block;
+  margin-top: 0.1cm;
+  background-color: lightgray;
+  border-style: solid groove;
+  border-radius: 10px;
+  border-color: gray;
+  font-size: 12pt;
+  color: gray;
+  text-align: center;
+}
